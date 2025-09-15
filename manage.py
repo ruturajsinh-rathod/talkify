@@ -20,3 +20,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# daphne -p 8000 config.asgi:application
