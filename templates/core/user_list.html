@@ -12,7 +12,7 @@
           <small class="text-muted">{{ user.email }}</small>
         </div>
       </div>
-      <a href="#" class="btn btn-sm btn-outline-primary disabled">Start Chat</a>
+        <a href="{% url 'chat_view' user.id %}" class="btn btn-sm btn-outline-primary">Start Chat</a>
     </div>
   {% empty %}
     <div class="alert alert-info">No other users found.</div>
